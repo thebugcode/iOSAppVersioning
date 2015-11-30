@@ -9,16 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    #if ALPHA
+    let serviceID = "123141asd12"
+    #elseif BETA
+    let serviceID = "ae7641fdd15"
+    #elseif STORE
+    let serviceID = "gl3141asd16"
+    #endif
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        configureExternalServiceWithIdentifier(serviceID)
+    }
+    
+    
+    func configureExternalServiceWithIdentifier(identifier: String?) {
+        print(identifier)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 
 
 }
