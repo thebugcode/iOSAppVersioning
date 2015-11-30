@@ -14,6 +14,7 @@
 		0DAB91EA1C0CAD7400E2EF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAB91E81C0CAD7400E2EF86 /* LaunchScreen.storyboard */; };
 		0DAB91F51C0CAD7400E2EF86 /* iOSVersioningTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAB91F41C0CAD7400E2EF86 /* iOSVersioningTestProjectTests.swift */; };
 		0DAB92001C0CAD7400E2EF86 /* iOSVersioningTestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAB91FF1C0CAD7400E2EF86 /* iOSVersioningTestProjectUITests.swift */; };
+		0DAB92221C0CE86000E2EF86 /* ReleaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAB92211C0CE86000E2EF86 /* ReleaseType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0DAB91FB1C0CAD7400E2EF86 /* iOSVersioningTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSVersioningTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAB91FF1C0CAD7400E2EF86 /* iOSVersioningTestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSVersioningTestProjectUITests.swift; sourceTree = "<group>"; };
 		0DAB92011C0CAD7400E2EF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DAB92211C0CE86000E2EF86 /* ReleaseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		0DAB91DE1C0CAD7400E2EF86 /* iOSVersioningTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				0DAB92211C0CE86000E2EF86 /* ReleaseType.swift */,
 				0DAB91DF1C0CAD7400E2EF86 /* AppDelegate.swift */,
 				0DAB91E11C0CAD7400E2EF86 /* ViewController.swift */,
 				0DAB91E31C0CAD7400E2EF86 /* Main.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DAB91E21C0CAD7400E2EF86 /* ViewController.swift in Sources */,
+				0DAB92221C0CE86000E2EF86 /* ReleaseType.swift in Sources */,
 				0DAB91E01C0CAD7400E2EF86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

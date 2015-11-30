@@ -9,17 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-    #if ALPHA
-    let serviceID = "123141asd12"
-    #elseif BETA
-    let serviceID = "ae7641fdd15"
-    #elseif STORE
-    let serviceID = "gl3141asd16"
-    #endif
     
     override func viewDidLoad() {
+        var serviceID: String?
+        switch(ReleaseType.currentConfiguration()) {
+        case .Debug:
+            serviceID = "SomeID"
+        case .Alpha:
+            serviceID = "123141asd12"
+        case .Beta:
+            serviceID = "ae7641fdd15"
+        case .Store:
+            serviceID = "gl3141asd16"
+        case .Unknown:
+            serviceID = ""
+        }
         configureExternalServiceWithIdentifier(serviceID)
     }
+    
     
     
     func configureExternalServiceWithIdentifier(identifier: String?) {
